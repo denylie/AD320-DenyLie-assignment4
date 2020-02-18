@@ -1,0 +1,16 @@
+.Header {
+   /*position: fixed;*/
+   /*when position is fixed, need to change margin on wrapper to clear the header*/
+   width: 100%;
+   text-align: center;
+   
+}
+
+.h-img{
+   width: 160px;
+   margin: 10px auto; /*this is to center*/
+}
+
+.h-h1{
+   margin: 0px auto; /*this is to center*/
+}

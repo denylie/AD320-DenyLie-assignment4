@@ -1,0 +1,132 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /*the size of your containers will not increase in size when you add padding!*/
+}
+
+/*---------------- BODY -----------------*/
+body.index {
+    font-size: 100%; 
+    /* using % is a good practice so you can tie other font-size that are using EM instead of px to allow single step editing here. It will resize proportionally.
+    */
+    font-family: helvetica, arial;
+    background-image: image();
+    background-attachment: fixed;
+}
+
+/*---------------- WRAPPER -----------------*/
+body.index div#wrapper {
+    width: 940px;
+    background: rgba(255,255,255,0.50); /* a = stands for the alpha value*/
+    /*DO NOT USE OPACITY it turns everything*/
+    margin: 5px auto auto auto ; /* when only 2 values are given, then it represents 'top bottom' or 'left right'*/
+    overflow: hidden; /*this tells the wrapper to recognize floating 
+    object as an element. Whenever you have a floating element, div will not recognize this as part of the document*/
+}
+
+/*---------------- HEADER ---------------*
+
+/*---------------- MAIN -----------------*/
+
+main{
+    width: 580px;
+    float: left;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+body.index main{
+    width: 940px;
+    text-align: center;
+    padding: 0px 0;
+}
+
+img.left { /*image of class "left" from the body below*/
+    float: left;
+    width: 300px;
+    margin: 5px 20px 20px 20px;
+    /* top right botton left = trbl*/
+}
+
+/*---------------- BUTTON ---------------*/
+input {
+    font-size: 16px;
+    margin: auto auto 20px auto;
+    font-family: verdana, helvetica, arial;
+}
+
+input :hover{
+    background-color: rgba(231, 154, 154, 0.89);
+}
+
+/*---------------- FOOTER ---------------*/
+body.index footer{ /*footer for index*/
+    height: 25px;
+    width: 100%;
+    line-height: 25px; 
+    /*bullet proof way to center content vertically when height is 50px*/
+    background-color: rgba(256,256,256, .45);
+    clear: both; /*both left and right*/
+    /*Whenever you have a floating element, container will not recognize this as part of the document, hence float. So need to clear.
+    margin-top: 40px; 
+    will not work/affect a cleared element. instead you have to go to the image or paragraph before the footer to add margin bottom*/
+}
+
+footer ul{
+    margin: 0;
+    padding: 0;
+}
+
+footer li { 
+    /*this formating will only affect li in the footer*/
+    float: left;
+    list-style-type: none;
+    width: 33%;
+    text-align: center;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    display: block;
+
+}
+
+footer a:hover{
+    background-color: rgba(255,255,255, .25);
+}
+
+
+
+/*----------------TYPOGRAPHY-------------*/
+
+h1 {
+    font-size: 2.441em;
+    /* 1em = 16px. By using em instead of px, the font size will ties to the font-size % in body css proportionally for easy one step editing*/
+    line-height: 1.15em;
+    margin: 15px 0px 10px 0px;
+    color: crimson;
+    font-family: verdana, helvetica, arial;
+}
+
+h2 {
+    clear: both;
+    /*in this scenario it clears both paragraph 1 and image 2
+    so parag 2 can start fresh below it all*/
+    font-size: 1.953em;
+    line-height: 1.15em;
+    margin: 15px 0px 10px 0px;
+    color: crimson;
+    font-family: verdana, helvetica, arial;
+}
+
+p {
+    margin: auto auto 20px auto;
+    line-height: 1.5;
+    text-align: left;
+    /*1.5 times font size*/
+    font-size: 16px; 
+    /*by using px here, the font size wont be affected by the change made in body font size %*/
+}
+

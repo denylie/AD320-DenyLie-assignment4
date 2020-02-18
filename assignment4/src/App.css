@@ -1,5 +1,27 @@
 .App {
-  text-align: center;
+  background-image: url(./assets/bg.png);
+  background-attachment: fixed;
+  background-repeat: initial;
+  font-size: 100%; 
+  font-family: helvetica, arial;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+
+
+
+  /* min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 100%;  */
+    /* using % is a good practice so you can tie other font-size that are using EM instead of px to allow single step editing here. It will resize proportionally.
+    */
+  /* margin: auto auto 20px auto;
+  text-align: left; */
+  /*1.5 times font size*/
+
 }
 
 .App-logo {
