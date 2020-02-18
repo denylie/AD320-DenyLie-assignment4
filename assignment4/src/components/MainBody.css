@@ -3,13 +3,13 @@
    width: 85%;
    /* a = stands for the alpha value*/
    background: rgba(255,255,255,0.50); 
-   margin: 5px auto auto auto ; /* when only 2 values are given, 
-   then it represents 'top bottom' or 'left right'*/
+   margin: 5px auto auto auto ; 
    overflow: hidden; /*this tells the wrapper to recognize floating 
    object as an element. Whenever you have a floating element, 
    div will not recognize this as part of the document*/
    float: center;
    padding: 0 1% 1% 1%;
+   min-height: 200%;
 }
 
 .b-h2{
@@ -18,7 +18,7 @@
 
 .b-img {
    float: left;
-   width: 35%;
+   width: 30%;
    margin: 5px 20px 20px 20px;
    /* top right botton left = trbl*/
 }
