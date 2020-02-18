@@ -11,7 +11,7 @@ function MainBody () {
          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
             in magna ante. In risus orci, fermentum quis arcu ut, varius auctor dui. 
-            Curabitur eget condimentum nulla. <strong><a href="https://github.com/denylie/AD320-DenyLie-Assignment2" target="blank"> 
+            Curabitur eget condimentum nulla. <strong><a href="https://github.com/denylie/AD320-DenyLie-assignment4/tree/master/assignment4/src" target="blank"> 
             My github.</a></strong> Pellentesque 
             habitant morbi tristique senectus et netus et malesuada fames ac t
             urpis egestas. Proin non tristique urna. Pellentesque id tincidunt 
